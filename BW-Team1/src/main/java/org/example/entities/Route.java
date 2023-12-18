@@ -1,4 +1,4 @@
-package entities;
+package org.example.entities;
 
 import javax.persistence.*;
 import java.util.List;
@@ -17,10 +17,11 @@ public class Route {
     @Column(name = "arrival_location")
     private String arrivalLocation;
 
-    @ManyToMany
+   /* @ManyToMany
     @JoinTable(name = "vehicles_routes", joinColumns = @JoinColumn(name = "route"),
     inverseJoinColumns = @JoinColumn(name = "vehicle_id"))
     private List<Vehicle> vehicles;
+*/
 
     @Column(name = "average_travel_time")
     private Double averageTravelTime;
@@ -60,14 +61,14 @@ public class Route {
         this.arrivalLocation = arrivalLocation;
     }
 
-    public List<Vehicle> getVehicles() {
-        return vehicles;
-    }
-
+    /*
+      public List<Vehicle> getVehicles() {
+          return vehicles;
+      }
     public void setVehicles(List<Vehicle> vehicles) {
-        this.vehicles = vehicles;
-    }
-
+          this.vehicles = vehicles;
+      }
+  */
     public Double getAverageTravelTime() {
         return averageTravelTime;
     }
@@ -84,7 +85,7 @@ public class Route {
         this.elapsedTime = elapsedTime;
     }
 
-    @Override
+/*    @Override
     public String toString() {
         return "Route{" +
                 "uuid=" + uuid +
@@ -94,5 +95,5 @@ public class Route {
                 ", averageTravelTime=" + averageTravelTime +
                 ", elapsedTime=" + elapsedTime +
                 '}';
-    }
+    }*/
 }
