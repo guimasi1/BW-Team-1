@@ -66,5 +66,9 @@ public class RoutesDAO {
         return query.getResultList();
     }
 
-    public List<Vehicle> getAllVehiclesByRoute() {}
+   /* public List<Vehicle> getAllVehiclesByRoute(UUID id) {
+        TypedQuery<Route> query = em.createQuery("SELECT r.vehicles FROM Route r WHERE r.uuid = :id", Route.class);
+        query.setParameter("id", id);
+        return query.getResultList();
+    }*/
 }
