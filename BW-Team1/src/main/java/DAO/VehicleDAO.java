@@ -1,0 +1,68 @@
+package DAO;
+import entities.Bus;
+import entities.Tram;
+import entities.Vehicle;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import java.util.List;
+import java.util.UUID;
+
+public class VehicleDAO {
+
+    private final EntityManager em;
+
+    public VehicleDAO(EntityManager em) {
+        this.em = em;
+    }
+
+
+
+    //to save vehicle
+public void save (Vehicle vehicle){
+    EntityTransaction transaction = em.getTransaction();
+    transaction.begin();
+    em.persist(vehicle);
+    transaction.commit();
+    System.out.println("veicolo aggiunto");
+}
+
+// FIND
+
+//to find vehicle
+
+public Vehicle findVehicleByUUID (UUID uuid){
+        return em.find(Vehicle.class, uuid);
+}
+
+//to find tram
+
+    public Tram findTramByUUID (UUID uuid){
+        return em.find(Tram.class, uuid);
+    }
+
+//to find bus
+
+    public Bus findBusByUUID (UUID uuid){
+        return em.find(Bus.class, uuid);
+    }
+
+//to find vehicle and delete
+public void findByUUIDAndDelete (UUID uuid){
+        Vehicle found = this.findVehicleByUUID(uuid);
+        if (found != null){
+            EntityTransaction transaction = em.getTransaction();
+            transaction.begin();
+            em.remove(found);
+            transaction.commit();
+            System.out.println("vehicle deleted");
+        }
+        else {System.out.println("cannot find the vehicle");}
+}
+}
+
+
+
+
