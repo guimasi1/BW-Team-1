@@ -1,15 +1,21 @@
 package entities;
 
+import javax.persistence.*;
+import java.util.List;
+import java.util.UUID;
+
 @Entity
 public class User {
     @Id
-    @GeneretedValue
+    @GeneratedValue
     private UUID card;
     private String name;
     private String surname;
     private int age;
+    @OneToOne(mappedBy = "user")
     private Pass pass;
-    private List <Ticket>
+    @OneToMany(mappedBy = "user")
+    private List<Ticket> ticketList;
 
     public User() {}
     public User(String name, String surname, int age, Pass pass) {

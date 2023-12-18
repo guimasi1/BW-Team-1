@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c72ae40-eb2c-4edf-8433-0f006c9e3717" name="Changes" comment="">
+    <list default="true" id="dcd2e14e-e8dd-4568-bffb-70dcea466257" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,29 +22,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 5
 }]]></component>
-  <component name="ProjectId" id="2ZiYolht7UZrJKLp6DXqpHRA1rM" />
+  <component name="ProjectId" id="2Zit15nRIR7lJbN2La8ZUy7nKpn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Sarah-Seller&&User"
+    "git-widget-placeholder": "Sarah-Seller&&User",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6c72ae40-eb2c-4edf-8433-0f006c9e3717" name="Changes" comment="" />
-      <created>1702906546796</created>
+      <changelist id="dcd2e14e-e8dd-4568-bffb-70dcea466257" name="Changes" comment="" />
+      <created>1702916511903</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1702906546796</updated>
+      <updated>1702916511903</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
