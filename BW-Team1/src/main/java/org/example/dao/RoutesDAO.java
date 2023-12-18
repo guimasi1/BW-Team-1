@@ -2,6 +2,7 @@ package org.example.dao;
 
 import org.example.entities.Route;
 import org.example.entities.User;
+import org.example.entities.Vehicle;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
@@ -45,5 +46,25 @@ public class RoutesDAO {
         TypedQuery<Route> query = em.createQuery("SELECT r FROM Route r ORDER BY r.averageTravelTime DESC", Route.class);
         return query.getResultList();
     }
+    public List<Route> orderByShortestElapsedTime () {
+        TypedQuery<Route> query = em.createQuery("SELECT r FROM Route r ORDER BY r.elapsedTime", Route.class);
+        return query.getResultList();
+    }
+    public List<Route> orderByLongestElapsedTime () {
+        TypedQuery<Route> query = em.createQuery("SELECT r FROM Route r ORDER BY r.elapsedTime DESC", Route.class);
+        return query.getResultList();
+    }
 
+    public List<Route> findRoutesByDepartureLocation(String location) {
+        TypedQuery<Route> query = em.createQuery("SELECT r FROM Route r WHERE LOWER(r.departureLocation) LIKE LOWER(CONCAT('%', :location, '%'))", Route.class);
+        query.setParameter("location", location);
+        return query.getResultList();
+    }
+    public List<Route> findRoutesByArrivalLocation(String location) {
+        TypedQuery<Route> query = em.createQuery("SELECT r FROM Route r WHERE LOWER(r.arrivalLocation) LIKE LOWER(CONCAT('%', :location, '%'))", Route.class);
+        query.setParameter("location", location);
+        return query.getResultList();
+    }
+
+    public List<Vehicle> getAllVehiclesByRoute() {}
 }

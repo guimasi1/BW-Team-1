@@ -87,15 +87,15 @@ public class Route {
         this.elapsedTime = elapsedTime;
     }
 
-/*    @Override
+    @Override
     public String toString() {
         return "Route{" +
                 "uuid=" + uuid +
                 ", departureLocation='" + departureLocation + '\'' +
                 ", arrivalLocation='" + arrivalLocation + '\'' +
-                ", vehicles=" + vehicles +
+              //  ", vehicles=" + vehicles +
                 ", averageTravelTime=" + averageTravelTime +
                 ", elapsedTime=" + elapsedTime +
                 '}';
-    }*/
+    }
 }
