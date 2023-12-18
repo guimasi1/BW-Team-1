@@ -23,4 +23,11 @@ public class Bus extends Vehicle{
     public void setCilindrataMotore(int cilindrataMotore) {
         this.cilindrataMotore = Bus.this.cilindrataMotore;
     }
+
+    @Override
+    public String toString() {
+        return "Bus{" +
+                "cilindrataMotore=" + cilindrataMotore +
+                '}';
+    }
 }

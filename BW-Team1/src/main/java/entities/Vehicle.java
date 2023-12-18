@@ -28,11 +28,17 @@ public abstract class Vehicle {
         @Column(name = "service_end_date")
         private LocalDate serviceEndDate;
 
+
+        //chiama domenicoooooo
     @ManyToMany(mappedBy = "vehicle")
     private List<Ticket> tickets;
 
-    @OneToMany(mappedBy = "vehicle")
+
+    @ManyToMany
+    @JoinTable(name = "vehicles_routes", joinColumns = @JoinColumn(name = "vehicles_id"),
+            inverseJoinColumns = @JoinColumn(name = "routes_id"))
     private List<Route> routes;
+
 
     public Vehicle() {
 
@@ -49,10 +55,6 @@ public abstract class Vehicle {
 
     public UUID getUUID() {
         return uuid;
-    }
-
-    public void setUUID(UUID uuid) {
-        this.uuid = uuid;
     }
 
     public String getType() {
@@ -103,6 +105,7 @@ public abstract class Vehicle {
         this.serviceEndDate = serviceEndDate;
     }
 
+
     public List<Ticket> getTickets() {
         return tickets;
     }
@@ -118,6 +121,23 @@ public abstract class Vehicle {
     public void setRoutes(List<Route> routes) {
         this.routes = routes;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "uuid=" + uuid +
+                ", type='" + type + '\'' +
+                ", capacity=" + capacity +
+                ", maintenanceStartDate=" + maintenanceStartDate +
+                ", maintenanceEndDate=" + maintenanceEndDate +
+                ", serviceStartDate=" + serviceStartDate +
+                ", serviceEndDate=" + serviceEndDate +
+                ", tickets=" + tickets +
+                ", routes=" + routes +
+                '}';
+    }
+
+
 }
 
 

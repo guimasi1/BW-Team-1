@@ -24,4 +24,11 @@ public class Tram extends Vehicle{
     public void setNumeroVagoni(int numeroVagoni) {
         this.numeroVagoni = numeroVagoni;
     }
+
+    @Override
+    public String toString() {
+        return "Tram{" +
+                "numeroVagoni=" + numeroVagoni +
+                '}';
+    }
 }
