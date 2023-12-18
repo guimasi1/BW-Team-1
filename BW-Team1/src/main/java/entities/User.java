@@ -30,10 +30,6 @@ public class User {
         return card;
     }
 
-    public void setCard(UUID card) {
-        this.card = card;
-    }
-
     public String getName() {
         return name;
     }
