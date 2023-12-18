@@ -2,6 +2,7 @@ package org.example.entities;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
@@ -18,10 +19,11 @@ public class Route {
     private String arrivalLocation;
 
    /* @ManyToMany
-    @JoinTable(name = "vehicles_routes", joinColumns = @JoinColumn(name = "route"),
-    inverseJoinColumns = @JoinColumn(name = "vehicle_id"))
+    @JoinTable(name = "vehicles_routes", joinColumns = @JoinColumn(name = "routes_id"),
+    inverseJoinColumns = @JoinColumn(name = "vehicles_id"))
     private List<Vehicle> vehicles;
 */
+
 
     @Column(name = "average_travel_time")
     private Double averageTravelTime;

@@ -6,6 +6,7 @@ import org.example.entities.User;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
+import java.util.List;
 import java.util.UUID;
 
 public class RoutesDAO {
@@ -27,7 +28,7 @@ public class RoutesDAO {
     }
 
     public Route findById(UUID id) {
-        TypedQuery<Route> query = em.createQuery("SELECT u FROM User u WHERE u.uuid = :id", Route.class);
+        TypedQuery<Route> query = em.createQuery("SELECT r FROM Route r WHERE r.uuid = :id", Route.class);
         query.setParameter("id", id);
         return query.getSingleResult();
     }
@@ -35,5 +36,14 @@ public class RoutesDAO {
     public void removeById(UUID id) {
         em.remove(this.findById(id));
     }
-    
+
+    public List<Route> orderByShortestAverageTravelTime () {
+        TypedQuery<Route> query = em.createQuery("SELECT r FROM Route r ORDER BY r.averageTravelTime", Route.class);
+        return query.getResultList();
+    }
+    public List<Route> orderByLongestAverageTravelTime () {
+        TypedQuery<Route> query = em.createQuery("SELECT r FROM Route r ORDER BY r.averageTravelTime DESC", Route.class);
+        return query.getResultList();
+    }
+
 }
