@@ -15,6 +15,7 @@ public class User {
     @OneToOne(mappedBy = "user")
     private Pass pass;
     @OneToMany(mappedBy = "user")
+    @Column(name = "ticket_list")
     private List<Ticket> ticketList;
 
     public User() {}

@@ -1,9 +1,6 @@
 package entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 import java.util.UUID;
 
@@ -12,10 +9,14 @@ public class Seller {
     @Id
     @GeneratedValue
     private UUID id;
+    @Column(name = "punto_di_emissione")
     private String puntoDiEmissione;
+    @Column(name = "seller_type")
     private SellerType sellerType;
+    @Column(name = "service_type")
     private Service serviceType;
-    @OneToMany(mappedBy = "Seller")
+    @OneToMany(mappedBy = "seller")
+    @Column(name = "control_managment_list")
     private List<ControlManagement> controlManagementList;
 
     public Seller() {}
