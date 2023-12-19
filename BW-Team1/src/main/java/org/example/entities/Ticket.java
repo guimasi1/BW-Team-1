@@ -1,14 +1,13 @@
-package entities;
+package org.example.entities;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.time.LocalDate;
-import java.util.UUID;
 
 @Entity
 public class Ticket extends ControlManagement{
-
+    @ManyToOne
+    User user;
     LocalDate dataDiVidimazione;
 
     public Ticket(LocalDate dataEmissione, double prezzo, LocalDate dataDiVidimazione) {

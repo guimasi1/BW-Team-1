@@ -1,4 +1,4 @@
-package entities;
+package org.example.entities;
 
 public abstract class Vehicle {
 }

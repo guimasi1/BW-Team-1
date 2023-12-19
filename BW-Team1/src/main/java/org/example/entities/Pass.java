@@ -1,9 +1,12 @@
-package entities;
+package org.example.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 import java.time.LocalDate;
 @Entity
 public class Pass extends  ControlManagement {
+    @OneToOne
+    User user;
     Periodicity periodicity;
     LocalDate dataDiScadenza;
 
