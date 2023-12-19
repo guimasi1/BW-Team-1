@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd2e14e-e8dd-4568-bffb-70dcea466257" name="Changes" comment="User &amp; Seller classes">
-      <change afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/SellerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/UserDAO.java" afterDir="false" />
+    <list default="true" id="dcd2e14e-e8dd-4568-bffb-70dcea466257" name="Changes" comment="User&amp;Seller DAO (save, findByID and deleteById)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Seller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/ControlManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/ControlManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Pass.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/Pass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Periodicity.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/Periodicity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/SellerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/SellerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/SellerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/SellerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Tram.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/Tram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BW-Team1/src/main/java/entities/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/BW-Team1/src/main/java/org/example/entities/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +36,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2Zit15nRIR7lJbN2La8ZUy7nKpn" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -38,15 +48,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Sarah-Seller&&User",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Sarah-Seller&amp;&amp;User&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,12 +82,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702919576696</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="User&amp;Seller DAO (save, findByID and deleteById)">
+      <option name="closed" value="true" />
+      <created>1702922300979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702922300979</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="User &amp; Seller classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="User &amp; Seller classes" />
+    <MESSAGE value="User&amp;Seller DAO (save, findByID and deleteById)" />
+    <option name="LAST_COMMIT_MESSAGE" value="User&amp;Seller DAO (save, findByID and deleteById)" />
   </component>
 </project>
